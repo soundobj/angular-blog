@@ -1,0 +1,42 @@
+{
+  "name": "AtsBlog",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "Mark Rendle <mark@markrendle.net>"
+  ],
+  "description": "AngularJS and TypeScript learning project",
+  "keywords": [
+    "angularjs",
+    "typescript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootswatch-dist": "yeti",
+    "angularjs": "~1.3.15",
+    "angular-ui-router": "~0.2.13"
+  },
+  "overrides": {
+    "bootswatch-dist": {
+      "normalize": {
+        "fonts": [
+          "*.eot",
+          "*.svg",
+          "*.ttf",
+          "*.woff",
+          "*.woff2"
+        ]
+      }
+    }
+  },
+  "devDependencies": {
+    "angular-ui-router": "~0.2.13"
+  }
+}

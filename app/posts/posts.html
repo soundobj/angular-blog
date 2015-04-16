@@ -1,0 +1,15 @@
+<div class="container" ng-show="$state.is('root.posts')">
+    <div class="row">
+        <h2>Posts</h2>
+    </div>
+    <div class="row" ng-repeat="post in postsCtrl.posts">
+        <div class="col-md-12">
+            <h3>{{post.title}}</h3>
+            <a ui-sref=".edit({id: post.id})" class="btn btn-sm btn-default">Edit</a>
+        </div>
+    </div>
+</div>
+
+<ui-view ng-show="$state.is('root.posts.edit')">
+
+</ui-view>
